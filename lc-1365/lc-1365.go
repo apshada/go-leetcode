@@ -8,11 +8,12 @@ func main() {
 	res := make(map[int]int, 0)
 
 	for i := 0; i < len(nums); i++ {
-		for j := i + 1; j < len(nums); j++ {
-			if nums[j] < nums[i] && j != i {
-				res[nums[j]]++
-			}
-		}
+		res[nums[i]]++
+		// for j := i + 1; j < len(nums); j++ {
+		// 	if nums[j] < nums[i] && j != i {
+		// 		res[nums[j]]++
+		// 	}
+		// }
 	}
 	fmt.Println(res)
 }
