@@ -11,12 +11,12 @@ func main() {
 	x := 0
 	ad := []string{"--X", "X++", "X++"}
 	for i := range ad {
-		fmt.Println(ad[i])
-		if ad[i] == "--X" {
+		if ad[i] == "--X" || ad[i] == "X--" {
 			x = x - 1
-		} else if ad[i] == "--X" {
+		} else if ad[i] == "++X" || ad[i] == "X++" {
 			// (ad[i] == "--X")
+			x = x + 1
 		}
 	}
-	// fmt.Println("I am Go", ad[0])
+	fmt.Println(x)
 }
