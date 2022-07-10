@@ -15,7 +15,7 @@ func main() {
 				max = sum
 			}
 			// fmt.Println(accounts[i][j], max)
-		}
+		}	
 	}
 
 	fmt.Println(max)
