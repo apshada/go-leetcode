@@ -37,7 +37,7 @@ func middleNode(head *Node) *Node {
 	for ; head != nil; head = head.nextNode {
 		count++
 	}
-
+	count = count /2
 	for ; count > 0; initial = initial.nextNode {
 		count--
 	}
