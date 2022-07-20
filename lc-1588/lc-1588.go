@@ -14,11 +14,11 @@ func main() {
 			prefixSum = append(prefixSum, nums[i])
 		} else {
 			prefixSum = append(prefixSum, prefixSum[i-1]+nums[i])
-			if i%2 != 0 {
-				rightSum = rightSum + (prefixSum[i-1] + nums[i])
-			} else {
-				rightSum = rightSum + prefixSum[i-1]
-			}
+			// if i%2 != 0 {
+			// 	rightSum = rightSum + (prefixSum[i-1] + nums[i])
+			// } else {
+			// 	rightSum = rightSum + prefixSum[i-1]
+			// }
 		}
 	}
 	// sum := 0
