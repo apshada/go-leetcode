@@ -10,7 +10,7 @@ func main() {
 		res[string(str)]++
 	}
 
-	fmt.Println(res, "sd")
+	fmt.Println(res)
 }
 
 // package main
